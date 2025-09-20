@@ -2,7 +2,7 @@
 
 An intelligent LLM-powered agent that automatically generates custom parsers for bank statement PDFs using LangGraph workflow orchestration.
 
-## Quick Start (5 Steps)
+## Quick Start
 
 ### 1. Clone and Setup with uv
 ```bash
