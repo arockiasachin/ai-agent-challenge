@@ -11,29 +11,45 @@ cd ai-agent-challenge
 
 # Install uv (ultra-fast Python package manager)
 curl -LsSf https://astral.sh/uv/install.sh | sh
-uv venv && source .venv/bin/activate
-uv pip install -r requirements.txt
 ```
 
-### 2. Configure API Key
+
+Create and activate the virtual environment:
+```bash
+uv venv
+source .venv/bin/activate   # On Windows, use: .venv\Scripts\activate
+```
+#### Install dependencies:
+```bash
+uv pip install -r requirements.txt
+```
+#### Sync environment (optional, if dependencies are already installed or to ensure versions match):
+```bash
+uv sync
+```
+
+### 3. Configure API Key
 ```bash
 echo "DEEPSEEK_API_KEY=your_api_key_here" > .env
 ```
 
-### 3. Run Agent for ICICI
+### 4. Run Agent for ICICI
 ```bash
-uv run python agent.py --target icici
+uv run agent.py --target icici
 ```
-
-### 4. Test Generated Parser
-```bash
-uv run pytest test_parser.py::test_icici_parser -v
-```
-
-### 5. Run on New Bank (e.g., SBI)
+#### To Run on New Bank (e.g., SBI)
 ```bash
 # Place your PDF in data/sbi/sbi_sample.pdf
-uv run python agent.py --target sbi --max-retries 3
+uv run agent.py --target sbi --max-retries 3
+```
+#### To run custom_parsers separately
+```bash
+uv run custom_parsers/icici_parser.py
+```
+
+### 5. Test Generated Parser
+```bash
+uv run pytest test_parser.py::test_icici_parser -v
 ```
 
 ## Agent Architecture
@@ -48,5 +64,3 @@ The agent operates as a **self-correcting LangGraph workflow** that intelligentl
 - 🧪 **[Development & Testing](docs/development_docs.md)** - Parser validation, extending to new banks, contribution guidelines
 
 ---
-
-*Built with LangGraph workflow orchestration and LLM-powered code generation*
