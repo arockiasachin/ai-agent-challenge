@@ -53,7 +53,7 @@ uv run pytest test_parser.py::test_icici_parser -v
 ```
 
 ## Agent Architecture
-
+[https://github.com/arockiasachin/ai-agent-challenge/blob/main/SysArch.png]
 The agent operates as a **self-correcting LangGraph workflow** that intelligently processes bank statement PDFs through specialized nodes: **Analysis** extracts PDF structure using LLM reasoning, **Code Generation** synthesizes custom parsers, **Execution** runs and validates the code, while **Comparison** checks output against expected results. When execution fails or validation doesn't match, the **Refinement** node automatically analyzes errors with context-aware prompting and regenerates improved code, creating an autonomous retry loop (up to 3 cycles) that ensures robust parser generation across different bank statement formats without manual intervention.
 
 ## Additional Documentation
