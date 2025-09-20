@@ -1,0 +1,30 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.24.0
+
+# LLM providers
+google-generativeai>=0.3.0
+groq>=0.4.0
+
+# PDF parsing libraries
+PyPDF2>=3.0.0
+pdfplumber>=0.7.0
+pymupdf>=1.23.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Utilities
+pathlib
+typing-extensions>=4.0.0
+python-dotenv>=0.19.0
+
+# Optional: Enhanced PDF processing
+tabula-py>=2.5.0
+camelot-py>=0.10.1
+langgraph
+langchain_deepseek
+langchain_core
+langchain
+langchain-google-genai
