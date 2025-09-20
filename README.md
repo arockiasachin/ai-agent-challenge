@@ -21,7 +21,7 @@ source .venv/bin/activate   # On Windows, use: .venv\Scripts\activate
 ```
 #### Install dependencies:
 ```bash
-uv pip install -r requirements.txt
+uv add install -r requirements.txt
 ```
 #### Sync environment (optional, if dependencies are already installed or to ensure versions match):
 ```bash
