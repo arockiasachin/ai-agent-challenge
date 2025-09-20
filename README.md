@@ -42,10 +42,10 @@ The agent operates as a **self-correcting LangGraph workflow** that intelligentl
 
 ## Additional Documentation
 
-- 📋 **[Project Structure & Features](docs\structure_docs.md)** - File organization, parser contract, and feature overview
-- 🔧 **[Advanced Usage & Configuration](docs\usage_docs.md)** - CLI options, API providers, custom settings
-- 🏗️ **[Technical Architecture](docs\architecture_docs.md)** - Detailed workflow states, node functions, routing logic
-- 🧪 **[Development & Testing](docs\development_docs.md)** - Parser validation, extending to new banks, contribution guidelines
+- 📋 **[Project Structure & Features](docs/structure_docs.md)** - File organization, parser contract, and feature overview
+- 🔧 **[Advanced Usage & Configuration](docs/usage_docs.md)** - CLI options, API providers, custom settings
+- 🏗️ **[Technical Architecture](docs/architecture_docs.md)** - Detailed workflow states, node functions, routing logic
+- 🧪 **[Development & Testing](docs/development_docs.md)** - Parser validation, extending to new banks, contribution guidelines
 
 ---
 
